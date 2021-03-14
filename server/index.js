@@ -2,11 +2,11 @@ const express = require('express');
 const socketio = require('socket.io');
 const http = require('http');
 
-const { addUser, removeUser, getUser, getUsersInRoom } = require('./server/users');
+const { addUser, removeUser, getUser, getUsersInRoom } = require('./users');
 
 const PORT = process.env.port || 5000;
 
-const router = require('./server/router');
+const router = require('./router');
 
 const app = express();
 const server = http.createServer(app);
@@ -45,10 +45,6 @@ io.on('connection', (socket) => {
     }
   });
 });
-
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('../client/build'));
-}
 
 app.use(router);
 
