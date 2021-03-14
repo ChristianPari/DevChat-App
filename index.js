@@ -2,11 +2,11 @@ const express = require('express');
 const socketio = require('socket.io');
 const http = require('http');
 
-const { addUser, removeUser, getUser, getUsersInRoom } = require('./users');
+const { addUser, removeUser, getUser, getUsersInRoom } = require('./server/users');
 
 const PORT = process.env.port || 5000;
 
-const router = require('./router');
+const router = require('./server/router');
 
 const app = express();
 const server = http.createServer(app);
