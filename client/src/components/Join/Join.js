@@ -17,24 +17,28 @@ const [room, setRoom] = useState('');
         <div className="joinInnerContainer">
           <h1 className="heading">Join</h1>
       
-          <div>
-            <input 
-              placeholder="Name" 
-              className="joinInput" 
+          <div className="input-group">
+            <div className="input-group-prepend">
+              <div className="input-group-text">Name</div>
+            </div>
+            <input
+              className="joinInput form-control" 
               type="text" 
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-      
-          <div>
-            <input 
-              placeholder="Room" 
-              className="joinInput mt-20" 
+
+          <div className="input-group">
+            <div className="input-group-prepend">
+              <div className="input-group-text room">Room</div>
+            </div>
+            <input
+              className="joinInput form-control" 
               type="text" 
               onChange={(e) => setRoom(e.target.value)}
             />
           </div>
-      
+
           <Link 
             onClick={(e) => (!name || !room) ? e.preventDefault() : null} 
             to={`/chat?name=${name}&room=${room}`

@@ -7,6 +7,7 @@ html, body {
 }
 
 .joinContainer {
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,10 +17,11 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
 }
 
 .welcomeHeading {
-  font-size: 60px;
+  font-size: 70px;
 	margin-bottom: 30px;
   padding-bottom: 5px;
   padding-left: 10px;
@@ -47,27 +49,28 @@ html, body {
   border-radius: 15px;
   border-color: black;
   box-shadow: 0px 0px 3px 3px black;
-  width: 15%;
+  width: 30%;
 }
 
 .joinInnerContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .heading {
   margin-top: 5px;
   margin-bottom: 10px;
   font-size: 40px;
+  font-weight: bold;
 }
 
-.joinInput {
-  border-radius: 10px;
-  padding: 10px 10px;
+.input-group {
+  border-radius: 5px;
   margin-bottom: 5px;
   border: 3px solid black;
-  background-color: rgb(189, 189, 189);
 }
 
 .button {
@@ -79,4 +82,8 @@ html, body {
   border-radius: 5px;
   border: none;
   margin-bottom: 2px;
+}
+
+.input-group-prepend .room {
+  padding-right: 15px;
 }
