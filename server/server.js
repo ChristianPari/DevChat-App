@@ -10,6 +10,7 @@ const router = require('./router');
 
 const app = express();
 const server = http.createServer(app);
+socketio.listen(server);
 const io = socketio(server);
 socketHanlding(io);
 
