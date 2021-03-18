@@ -10,9 +10,7 @@ const router = require('./router');
 
 const app = express();
 const server = http.createServer(app);
-const io = socketio(server, {
-  path: 'dev-chat-demo.herokuapp.com'
-});
+const io = socketio(server);
 socketHanlding(io);
 
 const buildPath = path.join(__dirname, '..', 'build');
