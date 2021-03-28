@@ -15,7 +15,7 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = "ws://" + window.location.hostname;
+  const ENDPOINT = 'localhost:5000';
 
   useEffect(() => {
     const string = new URL(window.location).search.substring(1);
@@ -27,7 +27,7 @@ const Chat = ({ location }) => {
       "timeout" : 10000,                  
       "transports" : ["websocket"]
     };
-    // socket = new WebSocket(ENDPOINT);
+    
     socket = io(ENDPOINT, options);
 
     setName(name);
