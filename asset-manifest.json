@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/DevChat-App/static/css/main.ce4d98d4.chunk.css",
+    "main.js": "/DevChat-App/static/js/main.3cb20dab.chunk.js",
+    "main.js.map": "/DevChat-App/static/js/main.3cb20dab.chunk.js.map",
+    "runtime-main.js": "/DevChat-App/static/js/runtime-main.0c7be214.js",
+    "runtime-main.js.map": "/DevChat-App/static/js/runtime-main.0c7be214.js.map",
+    "static/css/2.27dd871e.chunk.css": "/DevChat-App/static/css/2.27dd871e.chunk.css",
+    "static/js/2.e0ae7ada.chunk.js": "/DevChat-App/static/js/2.e0ae7ada.chunk.js",
+    "static/js/2.e0ae7ada.chunk.js.map": "/DevChat-App/static/js/2.e0ae7ada.chunk.js.map",
+    "index.html": "/DevChat-App/index.html",
+    "static/css/2.27dd871e.chunk.css.map": "/DevChat-App/static/css/2.27dd871e.chunk.css.map",
+    "static/css/main.ce4d98d4.chunk.css.map": "/DevChat-App/static/css/main.ce4d98d4.chunk.css.map",
+    "static/js/2.e0ae7ada.chunk.js.LICENSE.txt": "/DevChat-App/static/js/2.e0ae7ada.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c7be214.js",
+    "static/css/2.27dd871e.chunk.css",
+    "static/js/2.e0ae7ada.chunk.js",
+    "static/css/main.ce4d98d4.chunk.css",
+    "static/js/main.3cb20dab.chunk.js"
+  ]
+}
