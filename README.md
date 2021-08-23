@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# DevChat App
+A React based Frontend application that utilizes CSS and Bootstrap for styling, and Socket.io for communication over a server.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies
+  - React
+  - Node.js
+  - Express
+  - Socket.io
+  - HTML
+  - CSS
+  - Bootstrap4
 
-## Available Scripts
+## Get It Up and Running
+Unfortunately I was unable to get this application deployed on Heroku or GitHub pages, there is something happening within the Socket.io not connecting to the server and I've yet to find a fix. That being said, cloning this repo and running as is off your localhost displays its abilities. To show multi-sockets at work, you can connect to your localhost at port 3000 on mulitple different devices and communicate smoothly back and fourth.
 
-In the project directory, you can run:
+### Clone Repo
+Once cloned, ensure you are within the project directory in the terminal and run...
+
+### `npm install`
+This will install all packages within the main directory. Once complete run one additional command...
+
+### `npm run postinstall`
+This will go into the server subdirectory and install the necessary packages within its package.json. Next you just have to run...
 
 ### `npm start`
+To have the program start the server and the React development server at the same time which will also open the window of the React application. If the window does not appear simply open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Challenges Faced
+  - Working with Socket.io was a very confusing process, even now my knowledge of it could be a lot better but just have the practice and understanding of the methods and processes feels very exciting.
+  - The biggest challenge (which I have yet to overcome) is making this application public. I have done hours and hours of research and testing, rewriting code and yet nothing seems to prove profitable. Breaking for it for now to foucs on other resume projects but planning on coming back again...
+  - Bootstrap was another difficult grasp. I can say now I am familiar with it and if asked of me I could research and come up with a layout and styling along with CSS that can work but it has not became my favorite tool (seeing more and more of why I like Java so much, I'm definitely a backend dev)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Overall Notes
+Working on this project opened my eyes to the process of creating web sockets to allow communications across the world at a single domain. It truly is amazing to build out (simple in scale) something that you have used so many times on other sites, for example like communicating with a customer service rep on MetroPCS website via online chat.
