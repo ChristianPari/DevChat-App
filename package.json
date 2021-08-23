@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ChristianPari.github.io/DevChat-App",
+  "homepage": "https://ChristianPari.github.io",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -24,6 +24,7 @@
     "deploy": "gh-pages -d build",
     "start-client": "react-scripts start",
     "start": "cd server && npm start",
+    "full-start": "npm run start-client & npm run start ",
     "build": "react-scripts build && (cd server && npm install)",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
