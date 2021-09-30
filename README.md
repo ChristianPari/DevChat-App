@@ -32,3 +32,12 @@ To have the program start the server and the React development server at the sam
 
 ## Overall Notes
 Working on this project opened my eyes to the process of creating web sockets to allow communications across the world at a single domain. It truly is amazing to build out (simple in scale) something that you have used so many times on other sites, for example like communicating with a customer service rep on MetroPCS website via online chat.
+
+### Project Notes
+- Sockets
+  - Provides real-time transport and communication between two programs, client and server
+  - Can be used to implement any kind of communcation / not restricted to browsers or HTTP protocol
+- Socket: a fundamental class for interacting with the server
+  - .on("EVENT"): registers a new handler for the given event
+  - .emit(): emits an event to the socket, [Emmit Cheat Sheet](https://socket.io/docs/v3/emit-cheatsheet/)
+  - .broadcast.to(): sends a message to everyone except for the socket that starts it
